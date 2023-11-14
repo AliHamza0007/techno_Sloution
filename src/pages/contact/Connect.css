@@ -1,0 +1,23 @@
+.backBG {
+  background: #3b4043;
+}
+.frontBG {
+  background: #313436;
+}
+
+.EmailIconSet {
+  position: absolute;
+  left: 45%;
+  top: -5vh;
+  border-radius: 50%;
+  background-color: #fd7e02;
+  color: white;
+  border: 5px solid white;
+  padding: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .EmailIconSet {
+    left: 48%;
+    top: -2vh;
+  }
+}

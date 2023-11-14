@@ -1,0 +1,139 @@
+.upper-section {
+  height: 50%;
+  background-color: #3b4043;
+}
+.lower-section {
+  height: 50%;
+  background-color: #232429;
+}
+
+.movetocenter {
+  position: absolute;
+  left: 5%;
+  bottom: 20vh;
+}
+
+.ourserviceIndicators {
+  position: absolute;
+  bottom: -20%;
+}
+.carousel-indicators i {
+  padding: 10px;
+  margin: 0px 3px;
+  border: 2px solid #fd7405;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background: #fd7405;
+}
+.ring1 {
+  position: absolute;
+  padding: 25px;
+  border: 5px solid#3b4043;
+  background: transparent;
+  border-radius: 50%;
+  left: 55%;
+  z-index: 1;
+  bottom: 18px;
+}
+.ring2 {
+  position: absolute;
+  padding: 10px;
+  border: 5px solid #fd7405;
+  background: transparent;
+  border-radius: 50%;
+  left: 61%;
+  z-index: 1;
+  bottom: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .movetocenter {
+    left: 5%;
+    bottom: 9%;
+  }
+  .ourserviceIndicators {
+    bottom: -9%;
+  }
+  .ring1 {
+    left: 57%;
+    padding: 15px;
+    bottom: 40px;
+  }
+  .ring2 {
+    left: 61%;
+    padding: 8px;
+    bottom: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .movetocenter {
+    left: 5%;
+    bottom: 59%;
+  }
+  .ourserviceIndicators {
+    bottom: -9%;
+  }
+  .ring1 {
+    left: 57%;
+    padding: 15px;
+    bottom: 40px;
+  }
+  .ring2 {
+    left: 61%;
+    padding: 8px;
+    bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movetocenter {
+    left: 5%;
+    bottom: 9%;
+  }
+  .ourserviceIndicators {
+    bottom: -9%;
+  }
+  .ring1 {
+    left: 57%;
+    padding: 15px;
+    bottom: 20px;
+  }
+  .ring2 {
+    left: 61%;
+    padding: 8px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ParentContainer {
+    height: 1100px;
+  }
+  .upper-section {
+    height: 100%;
+  }
+  .lower-section {
+    height: 100;
+  }
+  .movetocenter {
+    height: 100%;
+    padding: 20px;
+    bottom: 30vh;
+  }
+
+  .ourserviceIndicators {
+    position: absolute;
+    bottom: -650px;
+  }
+
+  .ring1 {
+    left: 75%;
+    bottom: -570px;
+  }
+  .ring2 {
+    left: 85%;
+    bottom: -550px;
+  }
+}

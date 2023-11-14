@@ -1,0 +1,51 @@
+.upper-section {
+  height: 50vh;
+  background-color: #3b4043;
+}
+.lower-section {
+  height: 50vh;
+  background-color: #232429;
+}
+.imgHeight {
+  height: 50vh;
+}
+.moveImgesCenterContainer {
+  position: absolute;
+  bottom: 10%;
+}
+
+.ourProjectIndicators {
+  position: absolute;
+  height: 10px;
+  bottom: -15%;
+}
+.ourProjectIndicators i {
+  padding: 10px;
+  margin: 0px 3px;
+  border: 2px solid #fd7405;
+  border-radius: 50%;
+}
+
+.ourProjectIndicators .active {
+  background: #fd7405;
+}
+
+@media screen and (min-width: 1800px) {
+  .moveImgesCenterContainer {
+    bottom: 40vh;
+  }
+  .ourProjectIndicators {
+    bottom: -20%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .moveImgesCenterContainer {
+    bottom: 25vh;
+  }
+  .ourProjectIndicators {
+    bottom: -40px;
+  }
+  .imgHeight {
+    height: 100%;
+  }
+}

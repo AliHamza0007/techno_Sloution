@@ -1,0 +1,15 @@
+.bgImg {
+  background: url("../../assets/img/HeaderBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bgStyle {
+  border-end-end-radius: 60px;
+  color: #fd7405;
+  background: rgb(243, 238, 238);
+}
+
+.colorOrange {
+  color: #fd7405;
+}

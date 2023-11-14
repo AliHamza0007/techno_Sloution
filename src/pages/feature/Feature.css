@@ -1,0 +1,65 @@
+.colorOrange {
+  color: #fd7405;
+}
+.bgOrange {
+  background-color: #fd7405;
+}
+
+.badge {
+  background: #fd7405;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.radiusCut {
+  border-end-end-radius: 50px;
+  background: #fd7405;
+  color: rgb(243, 238, 238);
+}
+
+.pdLeft {
+  position: relative;
+  padding-left: 50px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.bgImagesTop,
+.bgImagesBottom {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.bgImagesTop {
+  background: url("https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849821_1280.jpg");
+  z-index: 2;
+  background-position: center;
+  top: 0;
+  background-size: cover;
+}
+
+.bgImagesBottom {
+  border: 15px solid #fd7405;
+  border-radius: 50%;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media screen and (max-width: 425px) {
+  .bgImagesTop,
+  .bgImagesBottom {
+    width: 75px;
+    left: 8%;
+    height: 75px;
+  }
+
+  .bgImagesBottom {
+    border: 5px solid #fd7405;
+    top: 40vh;
+  }
+}

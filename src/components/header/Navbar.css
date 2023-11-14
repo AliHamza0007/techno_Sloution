@@ -1,0 +1,25 @@
+.nav-item {
+  padding: 10px !important;
+  font-weight: bold !important;
+}
+.nav-link {
+  color: white !important;
+}
+.active {
+  color: #bb6c0a !important;
+}
+.btnOrange {
+  background: #fd7405 !important;
+  color: white !important;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+}
+
+@media screen and (max-width: 370px) {
+  .logo {
+    width: 35vh;
+  }
+}

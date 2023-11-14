@@ -1,0 +1,93 @@
+.addBTN {
+  width: 20%;
+  border-radius: 50%;
+  position: absolute;
+  left: 40%;
+  bottom: 23vh;
+  padding: 5px;
+}
+.bgColor {
+  background-color: #2b2d32;
+}
+.paddingLeft {
+  margin-left: 8%;
+}
+.bgDesign {
+  background-color: #fd8602;
+  margin-right: 50%;
+  display: grid;
+  grid-template-rows: 60vh;
+}
+.imgSet {
+  border: 10px solid white;
+  border-radius: 50%;
+  width: 40vh;
+  position: absolute;
+  bottom: 15vh;
+  left: 15vh;
+}
+.colorOrange {
+  color: #fd8602;
+}
+.ourTeamIndicators .indicatosmoveSet {
+  position: absolute;
+}
+.carousel-indicators i {
+  padding: 10px;
+  margin: 0px 3px;
+  border: 2px solid #fd7405;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background: #fd7405;
+}
+
+.indicatosmoveSet {
+  left: -40vh;
+  bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .addBTN {
+    bottom: 20vh;
+  }
+  .imgSet {
+    bottom: 15vh;
+    width: 30vh;
+    left: 5vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .addBTN {
+    bottom: 20vh;
+  }
+  .imgSet {
+    width: 40vh;
+    top: 10vh;
+    left: 78vh;
+  }
+  @media screen and (max-width: 768px) {
+    .imgSet {
+      width: 30vh;
+      top: 10vh;
+      left: 5vh;
+    }
+    .bgDesign {
+      grid-template-rows: 80vh;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .addBTN {
+      bottom: 15vh;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    .addBTN {
+      bottom: 9vh;
+    }
+    .imgSet {
+      left: 2vh;
+    }
+  }
+}

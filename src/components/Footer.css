@@ -1,0 +1,23 @@
+.bgFooter {
+  background-color: #fd6f06;
+  color: white;
+}
+.navigationBorder {
+  border-bottom: 5px solid white;
+  width: 30%;
+}
+.bgPurple {
+  background: #493240;
+}
+.footerblack {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #302e2e;
+}
+
+@media screen and (max-width: 425px) {
+  .footerblack {
+    display: block;
+  }
+}
