@@ -1,41 +1,30 @@
-.upper-section {
-  height: 50%;
-  background-color: #3b4043;
-}
-.lower-section {
-  height: 50%;
-  background-color: #232429;
+.ParentContainer {
+  background: linear-gradient(to bottom, #3b4043 50%, #232429 50%);
 }
 
-.movetocenter {
-  position: absolute;
-  left: 5%;
-  bottom: 20vh;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fd7405 !important;
 }
 
-.ourserviceIndicators {
-  position: absolute;
-  bottom: -20%;
-}
-.carousel-indicators i {
-  padding: 10px;
-  margin: 0px 3px;
-  border: 2px solid #fd7405;
-  border-radius: 50%;
+.swiper-pagination-bullet {
+  padding: 8px;
+  border: 3px solid #fd7405 !important;
 }
 
-.carousel-indicators .active {
-  background: #fd7405;
+.swiper-pagination-bullet-active {
+  background: #fd7405 !important;
 }
+
 .ring1 {
   position: absolute;
   padding: 25px;
   border: 5px solid#3b4043;
   background: transparent;
   border-radius: 50%;
-  left: 55%;
+  left: 56%;
   z-index: 1;
-  bottom: 18px;
+  bottom: 12%;
 }
 .ring2 {
   position: absolute;
@@ -45,95 +34,66 @@
   border-radius: 50%;
   left: 61%;
   z-index: 1;
-  bottom: 60px;
+  bottom: 18%;
 }
 
-@media screen and (min-width: 1024px) {
-  .movetocenter {
-    left: 5%;
-    bottom: 9%;
-  }
-  .ourserviceIndicators {
-    bottom: -9%;
-  }
+@media screen and (max-width: 2560px) {
   .ring1 {
-    left: 57%;
+    left: 58%;
     padding: 15px;
-    bottom: 40px;
+    bottom: 13%;
   }
   .ring2 {
     left: 61%;
     padding: 8px;
-    bottom: 60px;
+    bottom: 18%;
   }
 }
-@media screen and (min-width: 1440px) {
-  .movetocenter {
-    left: 5%;
-    bottom: 59%;
-  }
-  .ourserviceIndicators {
-    bottom: -9%;
-  }
+
+@media screen and (max-width: 1440px) {
   .ring1 {
-    left: 57%;
+    left: 58%;
     padding: 15px;
-    bottom: 40px;
+    bottom: 13%;
   }
   .ring2 {
     left: 61%;
     padding: 8px;
-    bottom: 60px;
+    bottom: 18%;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .ring1 {
+    left: 57%;
+    padding: 15px;
+    bottom: 13%;
+  }
+  .ring2 {
+    left: 61%;
+    padding: 8px;
+    bottom: 18%;
+  }
+}
 @media screen and (max-width: 768px) {
-  .movetocenter {
-    left: 5%;
-    bottom: 9%;
-  }
-  .ourserviceIndicators {
-    bottom: -9%;
-  }
   .ring1 {
     left: 57%;
     padding: 15px;
-    bottom: 20px;
+    bottom: 12%;
   }
   .ring2 {
     left: 61%;
     padding: 8px;
-    bottom: 40px;
+    bottom: 17%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .ParentContainer {
-    height: 1100px;
-  }
-  .upper-section {
-    height: 100%;
-  }
-  .lower-section {
-    height: 100;
-  }
-  .movetocenter {
-    height: 100%;
-    padding: 20px;
-    bottom: 30vh;
-  }
-
-  .ourserviceIndicators {
-    position: absolute;
-    bottom: -650px;
-  }
-
   .ring1 {
-    left: 75%;
-    bottom: -570px;
+    left: 82%;
+    bottom: 10%;
   }
   .ring2 {
-    left: 85%;
-    bottom: -550px;
+    left: 90%;
+    bottom: 17%;
   }
 }

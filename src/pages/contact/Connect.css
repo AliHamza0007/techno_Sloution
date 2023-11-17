@@ -9,6 +9,7 @@
   position: absolute;
   left: 45%;
   top: -5vh;
+  cursor: pointer;
   border-radius: 50%;
   background-color: #fd7e02;
   color: white;
@@ -19,5 +20,10 @@
   .EmailIconSet {
     left: 48%;
     top: -2vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .EmailIconSet {
+    left: 40%;
   }
 }

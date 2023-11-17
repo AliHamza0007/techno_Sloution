@@ -1,3 +1,35 @@
 .nav-link {
   cursor: pointer !important;
 }
+.nav-link:hover {
+  color: #eb8735 !important;
+}
+.active {
+  color: #f18e3c !important;
+}
+.btnOrange:hover {
+  color: #fd7405 !important;
+  background: white !important;
+}
+.btnOrange {
+  border-radius: 5px;
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 15px;
+  background: #493240;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 768px) {
+  .scroll-to-top-button {
+    bottom: 10%;
+    right: 20px;
+  }
+}

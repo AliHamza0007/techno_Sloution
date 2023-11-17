@@ -4,6 +4,18 @@
 .bgOrange {
   background-color: #fd7405;
 }
+.cardFeatureHeight {
+  height: 180px;
+}
+.cardFeatureHover:hover {
+  background-color: #5d381e !important;
+  color: white;
+}
+.cardFeatureHover:hover > .badge {
+  left: 40%;
+  transform: scale(1.2);
+  z-index: 1;
+}
 
 .badge {
   background: #fd7405;
@@ -14,12 +26,28 @@
   transform: translateX(-50%);
   z-index: 1;
 }
-.radiusCut {
-  border-end-end-radius: 50px;
-  background: #fd7405;
-  color: rgb(243, 238, 238);
-}
 
+.BGimg {
+  position: absolute;
+  top: 10%;
+}
+.cornerbg {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: -4%;
+}
+.rectTEXT {
+  justify-content: center;
+  align-items: end;
+  z-index: 5;
+}
+.BGrectangle {
+  background: url("../../assets/icons/Rectangle 102.png");
+  background-position: center;
+  background-size: cover;
+  /* height: min-content; */
+}
 .pdLeft {
   position: relative;
   padding-left: 50px;
@@ -50,6 +78,12 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .BGimg {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .bgImagesTop,
   .bgImagesBottom {
@@ -60,6 +94,24 @@
 
   .bgImagesBottom {
     border: 5px solid #fd7405;
-    top: 40vh;
+    top: 19%;
+  }
+
+  .BGimg {
+    width: 30%;
+  }
+  .cornerbg {
+    bottom: -2.5%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bgImagesBottom {
+    top: 15%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bgImagesBottom {
+    top: 12%;
   }
 }

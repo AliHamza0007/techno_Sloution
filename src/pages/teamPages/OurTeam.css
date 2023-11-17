@@ -1,37 +1,35 @@
 .addBTN {
-  width: 20%;
+  width: 15%;
   border-radius: 50%;
   position: absolute;
   left: 40%;
-  bottom: 23vh;
+  bottom: 23%;
   padding: 5px;
 }
+
 .bgColor {
   background-color: #2b2d32;
 }
-.paddingLeft {
-  margin-left: 8%;
-}
-.bgDesign {
-  background-color: #fd8602;
-  margin-right: 50%;
-  display: grid;
-  grid-template-rows: 60vh;
-}
+
 .imgSet {
   border: 10px solid white;
   border-radius: 50%;
   width: 40vh;
   position: absolute;
-  bottom: 15vh;
-  left: 15vh;
+  bottom: 24%;
+  left: 10%;
+}
+.imgQuote {
+  position: absolute;
+  top: -13%;
 }
 .colorOrange {
   color: #fd8602;
 }
-.ourTeamIndicators .indicatosmoveSet {
+.indicatosmoveSet {
   position: absolute;
 }
+
 .carousel-indicators i {
   padding: 10px;
   margin: 0px 3px;
@@ -43,51 +41,97 @@
   background: #fd7405;
 }
 
-.indicatosmoveSet {
-  left: -40vh;
-  bottom: 40px;
+.badge {
+  background: #fd7405;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
-@media screen and (min-width: 1024px) {
-  .addBTN {
-    bottom: 20vh;
-  }
+.cardTeamHeight {
+  height: 120px;
+}
+.cardTeamHover:hover {
+  background: #fd7405 !important;
+  color: white;
+}
+.cardTeamHover:hover > .badge {
+  left: 39%;
+  transform: scale(1.1);
+  z-index: 1;
+  transform: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 2560px) {
   .imgSet {
-    bottom: 15vh;
-    width: 30vh;
-    left: 5vh;
+    bottom: 10%;
+    width: 30%;
+    left: 0;
+  }
+
+  .indicatosmoveSet {
+    left: -20%;
+    bottom: 10%;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1440px) {
   .addBTN {
-    bottom: 20vh;
+    bottom: 23%;
+  }
+
+  .indicatosmoveSet {
+    left: -26%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .addBTN {
+    bottom: 30%;
   }
   .imgSet {
-    width: 40vh;
-    top: 10vh;
-    left: 78vh;
+    bottom: 20%;
+    left: 2%;
   }
-  @media screen and (max-width: 768px) {
-    .imgSet {
-      width: 30vh;
-      top: 10vh;
-      left: 5vh;
-    }
-    .bgDesign {
-      grid-template-rows: 80vh;
-    }
+  .indicatosmoveSet {
+    left: -20%;
+    bottom: 10%;
   }
-  @media screen and (min-width: 1440px) {
-    .addBTN {
-      bottom: 15vh;
-    }
+}
+
+@media screen and (max-width: 768px) {
+  .addBTN {
+    bottom: 35%;
   }
-  @media screen and (min-width: 2560px) {
-    .addBTN {
-      bottom: 9vh;
-    }
-    .imgSet {
-      left: 2vh;
-    }
+  .imgSet {
+    bottom: 30%;
+  }
+
+  .indicatosmoveSet {
+    bottom: 10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .addBTN {
+    bottom: 24%;
+  }
+  .imgSet {
+    width: 80%;
+    bottom: 0;
+    top: 8%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .addBTN {
+    bottom: 29%;
+  }
+  .imgSet {
+    width: 90%;
+    bottom: 0;
+    top: 10%;
+    left: 12%;
   }
 }

@@ -1,9 +1,9 @@
 import "./Footer.css";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
 import { LuFacebook, LuInstagram, LuTwitter } from "react-icons/lu";
 import { AiFillSkype } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
 const Footer = () => {
   return (
     <div className="bgFooter">
@@ -121,51 +121,53 @@ const Footer = () => {
               Sign Up for Our Newsletter to get Latest Updates and
               offers.Subscribe to receive newsin your inbox.
             </p>
-            <div className="form d-flex py-4">
+            <form
+              className="d-flex flexWrap justify-content-center align-items-center"
+              role="search"
+            >
               <input
-                value="Enter Your Email"
-                className=" bgFooter border py-2 p-2 text-white"
+                className="form-control  me-2 bgFooter text-white "
+                type="search"
+                placeholder="Enter  Email"
+                aria-label="Search"
               />
-              <button className="text-uppercase bgPurple btn px-2 text-white ">
-                <b> SubScribe</b>
+              <button
+                className="btn bgPurple rounded-1  px-2 text-white "
+                type="submit"
+              >
+                <b>SUBSCRIBE</b>
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
-      <div className="footerblack py-1 text-center justify-items-center">
-        <h6>2022 Copyright-All Rights Reserved.</h6>
-        <div>
-          <ul className="nav text-center justify-content-center align-items-center ">
-            <li className="nav-item">
-              <NavLink>
-                <LuFacebook size={"15px"} className="text-white" />
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink>
-                <LuInstagram size={"15px"} className="text-white" />
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink>
-                <LuTwitter size={"15px"} className="text-white" />
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink>
-                <AiFillSkype size={"15px"} className="text-white" />
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <Link to="header" smooth={true} duration={700}>
-                <RiArrowUpDoubleLine
-                  size={"20px"}
-                  className="text-white bgPurple"
-                />
-              </Link>
-            </li>
-          </ul>
+      <div className="footerblack px-md-3">
+        <div className=" px-md-5 paddingLR footerLinks  py-1 text-center justify-items-center">
+          <h6>2022 Copyright-All Rights Reserved.</h6>
+          <div>
+            <ul className="nav text-center justify-content-center align-items-center ">
+              <li className="nav-item">
+                <NavLink>
+                  <LuFacebook size={"15px"} className="text-white" />
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink>
+                  <LuInstagram size={"15px"} className="text-white" />
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink>
+                  <LuTwitter size={"15px"} className="text-white" />
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink>
+                  <AiFillSkype size={"15px"} className="text-white" />
+                </NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

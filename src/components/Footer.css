@@ -1,6 +1,9 @@
+.inputStyle {
+  border: none;
+}
 .bgFooter {
   background-color: #fd6f06;
-  color: white;
+  color: white !important;
 }
 .navigationBorder {
   border-bottom: 5px solid white;
@@ -9,14 +12,31 @@
 .bgPurple {
   background: #493240;
 }
-.footerblack {
+.footerLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footerblack {
   background: #302e2e;
 }
 
+@media screen and (max-width: 768px) {
+  .flexwrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 425px) {
+  .flexWrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexWrap > input {
+    margin-bottom: 10px;
+  }
   .footerblack {
     display: block;
   }

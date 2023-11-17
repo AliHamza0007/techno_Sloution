@@ -1,11 +1,16 @@
 import "./Feature.css";
+import FiberOptics from "../../assets/icons/optical-fiber.png";
+import BGimg from "../../assets/icons/Path 37.png";
+import cornorIMG from "../../assets/icons/Path 33.png";
 import { LuNetwork } from "react-icons/lu";
+import { CiStreamOn } from "react-icons/ci";
+import { SlScreenDesktop } from "react-icons/sl";
 const img1 =
   "https://media.istockphoto.com/id/1311040120/photo/young-woman-at-home-in-the-kitchen-drinking-tea-reading-news.webp?b=1&s=612x612&w=0&k=20&c=BkIb3MwQZkjKdIyUflNo9NZ8puvUvga0Ut6q9lNRdpY=";
 const Features = () => {
   return (
-    <div style={{ backgroundColor: "#232429" }}>
-      <div className="container  py-5">
+    <div className="position-relative" style={{ backgroundColor: "#232429" }}>
+      <div className="container px-2 py-5">
         <div className="row  ">
           <div className="text-center">
             <div>
@@ -17,10 +22,10 @@ const Features = () => {
           </div>
         </div>
         {/* cards */}
-        <div className="row mb-4 py-3 text-center">
+        <div className="row mb-4 py-3 px-2 text-center">
           <div className="col-md-3 col-6 py-4  p-2">
-            <div className="position-relative bg-light py-3">
-              <div className="py-4 ">
+            <div className="position-relative bg-light cardFeatureHover py-3">
+              <div className="py-4 cardFeatureHeight">
                 <h3>
                   <b>Business Network</b>
                 </h3>
@@ -32,53 +37,50 @@ const Features = () => {
             </div>
           </div>
           <div className="col-md-3 col-6  py-4  p-2">
-            <div
-              style={{ backgroundColor: "#5d381e" }}
-              className="position-relative text-light py-3"
-            >
-              <div className="py-4 ">
+            <div className="position-relative bg-light cardFeatureHover py-3">
+              <div className="py-4 cardFeatureHeight">
                 <h3>
-                  <b>Business Network</b>
+                  <b>60 for Mobiles</b>
                 </h3>
                 <p className="px-3">Nullam vitae tempor moletise exthe </p>
               </div>
               <div className="badge">
-                <LuNetwork size={30} />
+                <SlScreenDesktop size={30} />
               </div>
             </div>
           </div>
           <div className="col-md-3 col-6  py-4 p-2">
-            <div className="position-relative bg-light py-3">
-              <div className="py-4 ">
+            <div className="position-relative bg-light cardFeatureHover py-3">
+              <div className="py-4 cardFeatureHeight ">
                 <h3>
-                  <b>Business Network</b>
+                  <b>Line Streaming</b>
                 </h3>
                 <p className="px-3">Nullam vitae tempor moletise exthe </p>
               </div>
               <div className="badge">
-                <LuNetwork size={30} />
+                <CiStreamOn size={30} />
               </div>
             </div>
           </div>
           <div className="col-md-3 col-6  py-4 p-2">
-            <div className="position-relative bg-light py-3">
-              <div className="py-4 ">
+            <div className="position-relative cardFeatureHover bg-light py-3">
+              <div className="py-4 cardFeatureHeight ">
                 <h3>
-                  <b>Business Network</b>
+                  <b>Fiber Broads</b>
                 </h3>
                 <p className="px-3">Nullam vitae tempor moletise exthe </p>
               </div>
               <div className="badge">
-                <LuNetwork size={30} />
+                <img src={FiberOptics} width="30px" alt="FiberOptics" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="Images-Parent  position-relative">
+        <div className="Images-Parent px-2 position-relative">
           <div className="row ">
             <div className="bgImagesTop"></div>
-            <div className="col-md-6 col-12 py-4">
+            <div className="col-md-5 col-12 py-4">
               <img
                 src={img1}
                 className="img pdLeft img-fluid h-100"
@@ -87,7 +89,7 @@ const Features = () => {
             </div>
             <div className="bgImagesBottom"></div>
 
-            <div className="col-md-6 col-12 px-4 py-5">
+            <div className="col-md-7 col-12 px-4 py-5">
               <div className="colorOrange text-uppercase py-2">
                 <li type="square">ABOUT OUR COMPANY</li>
               </div>
@@ -100,30 +102,41 @@ const Features = () => {
                 </h6>
                 <h6 className="text-light">Cloud library.</h6>
               </div>
-              <div className="row py-2">
-                <div className="col-lg-3 col-12">
-                  <div className="bg-light py-3">
-                    <h2 className="radiusCut  w-75  py-1 ">25 +</h2>
-                    <h5 className="colorOrange text-center">Experience</h5>
+              <div className="row py-5 ">
+                <div className="col-md-4 col-12">
+                  <div className="position-relative  BGrectangle py-3 px-1">
+                    <h2 className=" BGimg rectTEXT py-2 px-2 text-light">
+                      25 +
+                    </h2>
+                    <img src={BGimg} className="BGimg" alt="BGimg" />
+                    <h5 className="colorOrange mt-5 text-center pt-5">
+                      Experience
+                    </h5>
                   </div>
                 </div>
-                <div className="col-lg-9 col-12 py-3">
+                <div className="col-md-8 col-12 justify-content-center py-3 align-items-center">
                   <ul className="colorOrange">
                     <li type="suare">
-                      Nulla facilisi.Nullam is magna id dolor blandit return
+                      <h6>
+                        Nulla facilisi.Nullam is magna id dolor blandit return
+                      </h6>
                     </li>
                     <li type="suare">
-                      Nulla facilisi.Nullam is magna id dolor blandit return
+                      <h6>
+                        Nulla facilisi.Nullam is magna id dolor blandit return
+                      </h6>
                     </li>
                     <li type="suare">
-                      Nulla facilisi.Nullam is magna id dolor blandit return
+                      <h6>
+                        Nulla facilisi.Nullam is magna id dolor blandit return
+                      </h6>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="row ">
                 <div className=" col-4  px-1 font-bold">
-                  <button className="btn bgOrange px-lg-4">Our Mission</button>
+                  <button className="btn btnOrange px-lg-4">Our Mission</button>
                 </div>
                 <div className=" col-4 px-1 font-bold">
                   <button className="btn btn-light px-lg-4">
@@ -140,6 +153,12 @@ const Features = () => {
           </div>
         </div>
       </div>
+      <img
+        src={cornorIMG}
+        className="cornerbg img img-fluid"
+        alt="Cornor Image"
+      //  eslint-disable-next-line 
+      />
     </div>
   );
 };

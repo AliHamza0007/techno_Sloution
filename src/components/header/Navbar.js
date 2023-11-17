@@ -1,19 +1,15 @@
 import "./Navbar.css";
 import logo from "../../assets/logo/logo.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 export default function Navbar() {
   return (
-    <div className="container ">
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="header">
-            <img
-              src={logo}
-              alt="TECHNO_SOLUTION"
-              className="img logo img-fluid"
-            />
-          </Link>
+    <div className="container navbarBG">
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid ">
+          <Link className="navbar-brand DIV320" to="header">
+            <img src={logo} alt="TECHNO_SOLUTION" className=" logo" />
+          </Link>{" "}
           <button
             className="navbar-toggler"
             type="button"
@@ -23,10 +19,10 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav text-center m-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav text-center m-auto  mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
                   smooth={true}

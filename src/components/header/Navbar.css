@@ -5,21 +5,18 @@
 .nav-link {
   color: white !important;
 }
-.active {
-  color: #bb6c0a !important;
-}
+
 .btnOrange {
   background: #fd7405 !important;
   color: white !important;
 }
 
-.navbar {
-  position: fixed;
-  z-index: 100;
-}
-
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 320px) {
+  .DIV320 {
+    display: inline-flex;
+    width: 70%;
+  }
   .logo {
-    width: 35vh;
+    width: 100%;
   }
 }

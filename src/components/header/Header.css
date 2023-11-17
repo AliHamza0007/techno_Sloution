@@ -5,11 +5,38 @@
   background-position: center;
 }
 .bgStyle {
-  border-end-end-radius: 60px;
+  clip-path: polygon(0 0, 90% 0, 100% 51%, 90% 100%, 0% 100%);
   color: #fd7405;
   background: rgb(243, 238, 238);
+  padding-right: 50px;
 }
 
+.playBtn {
+  background: #fd7405;
+  color: rgb(243, 238, 238);
+  border-radius: 51%;
+}
+
+.btnContact {
+  background: #fd7405;
+  color: rgb(243, 238, 238);
+  text-transform: uppercase;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.btnContact:hover {
+  color: #fd7405;
+  background: rgb(243, 238, 238);
+  transform: 0.7s ease-in;
+}
+.playBtn:hover {
+  color: #fd7405;
+  background: rgb(243, 238, 238);
+  transform: 0.7s ease-in;
+}
 .colorOrange {
   color: #fd7405;
+}
+.fontBigger {
+  font-size: 60px;
 }
