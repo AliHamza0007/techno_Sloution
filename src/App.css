@@ -1,12 +1,4 @@
-.nav-link {
-  cursor: pointer !important;
-}
-.nav-link:hover {
-  color: #eb8735 !important;
-}
-.active {
-  color: #f18e3c !important;
-}
+
 .btnOrange:hover {
   color: #fd7405 !important;
   background: white !important;
@@ -33,3 +25,4 @@
     right: 20px;
   }
 }
+

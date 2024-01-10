@@ -3,14 +3,50 @@
   font-weight: bold !important;
 }
 .nav-link {
-  color: white !important;
+  color: white;
+  cursor: pointer !important;
 }
-
+.nav-link:hover {
+  color: #fd7405;
+}
+.nav-link.active {
+  color: #fd7405 !important;
+}
 .btnOrange {
   background: #fd7405 !important;
   color: white !important;
 }
 
+.navbarBG {
+  position: sticky;
+  width: 100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  top: 0;
+}
+.navbarScroll {
+  background: #f3eaea;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  top: 0;
+}
+.navbarScroll .nav-link {
+  color: #fd7405;
+}
+.navbarScroll .nav-link:hover {
+  color:black;
+}
+.navbarScroll .nav-link.active {
+  color: #070606 !important;
+}
 @media screen and (max-width: 320px) {
   .DIV320 {
     display: inline-flex;

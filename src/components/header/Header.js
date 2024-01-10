@@ -1,7 +1,6 @@
 import Navbar from "./Navbar";
 import "./Header.css";
 import headerIMG from "../../assets/img/HeaderIMG.png";
-// import PlayBtn from "../../assets/icons/Component 4 GÇô 2.png";
 import bullet from "../../assets/icons/Component 5 GÇô 3.png";
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -9,11 +8,11 @@ const Header = () => {
   return (
     <div className="bgImg">
       <Navbar />
-      <div className="container px-2 py-5 ">
+      <div className="container px-2  ">
         <div className="row pt-5 ">
-          <div className="col-md-7  d-inline-flex justify-content-center align-items-center text-start ">
+          <div className="col-md-7 pt-5 mt-5 py-5 d-inline-flex justify-content-center align-items-center text-start ">
             <div>
-              <div className="bgStyle d-inline py-1 justify-content-center align-items-center">
+              <div className="bgStyle  mt-5 d-inline py-1 justify-content-center align-items-center">
                 <img
                   src={bullet}
                   className="img img-fluid mx-3 py-2 "
@@ -61,7 +60,7 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 pt-5 mt-5">
             <img
               src={headerIMG}
               alt="HeaderIMG"

@@ -9,7 +9,7 @@ const img1 =
   "https://media.istockphoto.com/id/1311040120/photo/young-woman-at-home-in-the-kitchen-drinking-tea-reading-news.webp?b=1&s=612x612&w=0&k=20&c=BkIb3MwQZkjKdIyUflNo9NZ8puvUvga0Ut6q9lNRdpY=";
 const Features = () => {
   return (
-    <div className="position-relative" style={{ backgroundColor: "#232429" }}>
+    <div className="position-relative " style={{ backgroundColor: "#232429" }}>
       <div className="container px-2 py-5">
         <div className="row  ">
           <div className="text-center">
@@ -134,18 +134,20 @@ const Features = () => {
                   </ul>
                 </div>
               </div>
-              <div className="row ">
-                <div className=" col-4  px-1 font-bold">
-                  <button className="btn btnOrange px-lg-4">Our Mission</button>
-                </div>
-                <div className=" col-4 px-1 font-bold">
-                  <button className="btn btn-light px-lg-4">
-                    Tech Support
+              <div className="row">
+                <div
+                  className="btn-group"
+                  role="group"
+                  aria-label="Basic outlined example"
+                >
+                  <button type="button" className=" mx-1 btn btnOrange">
+                    <b className="">Our Mission</b>
                   </button>
-                </div>
-                <div className=" col-4  px-1 font-bold">
-                  <button className="btn btn-light px-lg-4">
-                    Tech Service
+                  <button type="button" className=" mx-1 btn btn-light">
+                    <b className="">Tech Support</b>
+                  </button>
+                  <button type="button" className="ZIndex mx-1 btn btn-light">
+                    <b className="">Tech Service</b>
                   </button>
                 </div>
               </div>
@@ -157,7 +159,6 @@ const Features = () => {
         src={cornorIMG}
         className="cornerbg img img-fluid"
         alt="Cornor Image"
-      //  eslint-disable-next-line 
       />
     </div>
   );

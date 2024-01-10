@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import { Element, Link } from "react-scroll";
 import Header from "./components/header/Header";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
-
 const App = () => {
   return (
     <>
@@ -39,9 +38,10 @@ const App = () => {
             size={"30px"}
             className="text-white bgPurple scroll-to-top-button"
           />
-        </Link>{" "}
+        </Link>
       </div>
     </>
   );
 };
+
 export default App;

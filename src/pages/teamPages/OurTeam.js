@@ -26,8 +26,9 @@ const OurTeam = () => {
           className="Swiper mb-5 pb-5 "
           modules={[Navigation, EffectFade, Autoplay, Pagination]}
           effect="slide"
+          speed="1000"
           autoplay={{
-            delay: 1500,
+            delay: 8500,
             disableOnInteraction: false,
           }}
           // slidesPerView={3}
@@ -45,13 +46,91 @@ const OurTeam = () => {
             clickable: true,
           }}
         >
-          {Users?.slice(0, 7).map((user) => (
+          {Users?.slice(0, 1).map((user) => (
             <SwiperSlide key={user.id}>
               <div className="card bg-dark">
                 <img
                   className=" img bg-secondary img-fluid imgUserHeight"
                   alt={user.firstName}
-                  src={user.image}
+                  src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHVzZXJzfGVufDB8fDB8fHww"
+                />
+                <div className="px-3 imgBodyHandle ">
+                  <div className=" py-2  bg-light ">
+                    <div className="addBTN colorOrange  bg-light h2">+</div>
+                    <h4 className="card-title pt-2 mt-3 ">{user.firstName}</h4>
+                    <h6 className="card-title colorOrange ">
+                      {user.company.department}
+                    </h6>
+                    <hr />
+                    <div className="d-flex justify-content-between p-1 ">
+                      <h6>{user.phone.substring(0, 8)}</h6>
+                      {" | "}
+                      <h6>{user.email.substring(0, 8)}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {Users?.slice(2, 3).map((user) => (
+            <SwiperSlide key={user.id}>
+              <div className="card bg-dark">
+                <img
+                  className=" img bg-secondary img-fluid imgUserHeight"
+                  alt={user.firstName}
+                  src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D"
+                />
+                <div className="px-3 imgBodyHandle ">
+                  <div className=" py-2  bg-light ">
+                    <div className="addBTN colorOrange  bg-light h2">+</div>
+                    <h4 className="card-title pt-2 mt-3 ">{user.firstName}</h4>
+                    <h6 className="card-title colorOrange ">
+                      {user.company.department}
+                    </h6>
+                    <hr />
+                    <div className="d-flex justify-content-between p-1 ">
+                      <h6>{user.phone.substring(0, 8)}</h6>
+                      {" | "}
+                      <h6>{user.email.substring(0, 8)}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {Users?.slice(3, 4).map((user) => (
+            <SwiperSlide key={user.id}>
+              <div className="card bg-dark">
+                <img
+                  className=" img bg-secondary img-fluid imgUserHeight"
+                  alt={user.firstName}
+                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnN8ZW58MHx8MHx8fDA%3D"
+                />
+                <div className="px-3 imgBodyHandle ">
+                  <div className=" py-2  bg-light ">
+                    <div className="addBTN colorOrange  bg-light h2">+</div>
+                    <h4 className="card-title pt-2 mt-3 ">{user.firstName}</h4>
+                    <h6 className="card-title colorOrange ">
+                      {user.company.department}
+                    </h6>
+                    <hr />
+                    <div className="d-flex justify-content-between p-1 ">
+                      <h6>{user.phone.substring(0, 8)}</h6>
+                      {" | "}
+                      <h6>{user.email.substring(0, 8)}</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {Users?.slice(4, 5).map((user) => (
+            <SwiperSlide key={user.id}>
+              <div className="card bg-dark">
+                <img
+                  className=" img bg-secondary img-fluid imgUserHeight"
+                  alt={user.firstName}
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHVzZXJzfGVufDB8fDB8fHww"
                 />
                 <div className="px-3 imgBodyHandle ">
                   <div className=" py-2  bg-light ">
@@ -131,189 +210,158 @@ const OurTeam = () => {
       </div>
       <div className=" text-white px-3">
         <div className="container">
-          {" "}
-          <div
-            id="carouselExampleAutoplaying"
-            className="carousel pb-5 mb-5  slide"
-            data-bs-ride="carousel"
+          <Swiper
+            speed="1500"
+            className="Swiper mb-5 pb-5 "
+            modules={[EffectFade, Autoplay, Pagination]}
+            effect="slide"
+            autoplay={{
+              delay: 6500,
+              disableOnInteraction: false,
+            }}
+            slidesPerView={1}
+            spaceBetween={15}
+            pagination={{
+              clickable: true,
+            }}
           >
-            <div className="carousel-indicators indicatosmoveSet">
-              <i
-                color="red"
-                // data-bs-target="#carouselExampleDark"
-                data-bs-slide-to={0}
-                aria-current="true"
-                aria-label="Slide 1"
-                className="px-1 active"
-                size={30}
-              ></i>
-              <i
-                // data-bs-target="#carouselExampleDark"
-                data-bs-slide-to={1}
-                size={30}
-                className="px-1"
-                aria-label="Slide 2"
-              ></i>
-              <i
-                // data-bs-target="#carouselExampleDark"
-                data-bs-slide-to={2}
-                className="px-1"
-                size={30}
-                aria-label="Slide 3"
-              ></i>{" "}
-              <i
-                color="red"
-                // data-bs-target="#carouselExampleDark"
-                data-bs-slide-to={3}
-                aria-current="true"
-                aria-label="Slide 4"
-                className="px-1 "
-                size={30}
-              ></i>
-            </div>
-            <div className="carousel-inner  position-relative">
-              <div className="carousel-item active">
-                {Users?.slice(0, 1).map((user) => (
-                  <div key={user.id} className="row">
+            <SwiperSlide>
+              {Users?.slice(0, 1).map((user) => (
+                <div key={user.id} className="row">
+                  <img
+                    className="img img-fluid  imgSet"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt={user.firstName}
+                  />{" "}
+                  <div className="col-md-2 col-6">
+                    <img src={bgBar} alt="bgBar" />
+                  </div>
+                  <div className=" offset-md-2 col-md-8  col-12 py-3 ">
                     <img
-                      className="img img-fluid  imgSet"
-                      src={user.image}
-                      alt={user.firstName}
-                    />{" "}
-                    <div className="col-md-2 col-6">
-                      <img src={bgBar} alt="bgBar" />
-                    </div>
-                    <div className=" offset-md-2 col-md-8  col-12 py-3 ">
-                      <img
-                        src={quotes}
-                        className="img img-fluid imgQuote"
-                        alt="Quotes"
-                      />
-                      <div className="justify-content-center pt-5 align-items-center">
-                        <h2 className="text-white py-4">
-                          We understand he importance of to approaching Work
-                          integrasand belie in the power simple and we easy
-                          cation growth always act like adipisicing eit,sed do
-                          eiumod
-                        </h2>
-                        <h1 className="text-uppercase   text-white">
-                          {user.firstName}
-                        </h1>
-                        <h6 className="colorOrange">
-                          <i>{user.company.department}</i>
-                        </h6>
-                      </div>
+                      src={quotes}
+                      className="img img-fluid imgQuote"
+                      alt="Quotes"
+                    />
+                    <div className="justify-content-center pt-5 align-items-center">
+                      <h2 className="text-white py-4">
+                        We understand he importance of to approaching Work
+                        integrasand belie in the power simple and we easy cation
+                        growth always act like adipisicing eit,sed do eiumod
+                      </h2>
+                      <h1 className="text-uppercase   text-white">
+                        {user.firstName}
+                      </h1>
+                      <h6 className="colorOrange">
+                        <i>{user.company.department}</i>
+                      </h6>
                     </div>
                   </div>
-                ))}
-              </div>
-              <div className="carousel-item ">
-                {Users?.slice(2, 3).map((user) => (
-                  <div key={user.id} className="row">
+                </div>
+              ))}
+            </SwiperSlide>
+            <SwiperSlide>
+              {Users?.slice(2, 3).map((user) => (
+                <div key={user.id} className="row">
+                  <img
+                    className="img img-fluid  imgSet"
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt={user.firstName}
+                  />{" "}
+                  <div className="col-md-2 col-6">
+                    <img src={bgBar} alt="bgBar" />
+                  </div>
+                  <div className=" offset-md-2 col-md-8  col-12 py-3 ">
                     <img
-                      className="img img-fluid  imgSet"
-                      src={user.image}
-                      alt={user.firstName}
-                    />{" "}
-                    <div className="col-md-2 col-6">
-                      <img src={bgBar} alt="bgBar" />
-                    </div>
-                    <div className=" offset-md-2 col-md-8  col-12 py-3 ">
-                      <img
-                        src={quotes}
-                        className="img img-fluid imgQuote"
-                        alt="Quotes"
-                      />
-                      <div className="justify-content-center pt-5 align-items-center">
-                        <h2 className="text-white py-4">
-                          We understand he importance of to approaching Work
-                          integrasand belie in the power simple and we easy
-                          cation growth always act like adipisicing eit,sed do
-                          eiumod
-                        </h2>
-                        <h1 className="text-uppercase   text-white">
-                          {user.firstName}
-                        </h1>
-                        <h6 className="colorOrange">
-                          <i>{user.company.department}</i>
-                        </h6>
-                      </div>
+                      src={quotes}
+                      className="img img-fluid imgQuote"
+                      alt="Quotes"
+                    />
+                    <div className="justify-content-center pt-5 align-items-center">
+                      <h2 className="text-white py-4">
+                        We understand he importance of to approaching Work
+                        integrasand belie in the power simple and we easy cation
+                        growth always act like adipisicing eit,sed do eiumod
+                      </h2>
+                      <h1 className="text-uppercase   text-white">
+                        {user.firstName}
+                      </h1>
+                      <h6 className="colorOrange">
+                        <i>{user.company.department}</i>
+                      </h6>
                     </div>
                   </div>
-                ))}
-              </div>
-              <div className="carousel-item ">
-                {Users?.slice(4, 5).map((user) => (
-                  <div key={user.id} className="row">
+                </div>
+              ))}
+            </SwiperSlide>
+            <SwiperSlide>
+              {Users?.slice(4, 5).map((user) => (
+                <div key={user.id} className="row">
+                  <img
+                    className="img img-fluid  imgSet"
+                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt={user.firstName}
+                  />{" "}
+                  <div className="col-md-2 col-6">
+                    <img src={bgBar} alt="bgBar" />
+                  </div>
+                  <div className=" offset-md-2 col-md-8  col-12 py-3 ">
                     <img
-                      className="img img-fluid  imgSet"
-                      src={user.image}
-                      alt={user.firstName}
-                    />{" "}
-                    <div className="col-md-2 col-6">
-                      <img src={bgBar} alt="bgBar" />
-                    </div>
-                    <div className=" offset-md-2 col-md-8  col-12 py-3 ">
-                      <img
-                        src={quotes}
-                        className="img img-fluid imgQuote"
-                        alt="Quotes"
-                      />
-                      <div className="justify-content-center pt-5 align-items-center">
-                        <h2 className="text-white py-4">
-                          We understand he importance of to approaching Work
-                          integrasand belie in the power simple and we easy
-                          cation growth always act like adipisicing eit,sed do
-                          eiumod
-                        </h2>
-                        <h1 className="text-uppercase   text-white">
-                          {user.firstName}
-                        </h1>
-                        <h6 className="colorOrange">
-                          <i>{user.company.department}</i>
-                        </h6>
-                      </div>
+                      src={quotes}
+                      className="img img-fluid imgQuote"
+                      alt="Quotes"
+                    />
+                    <div className="justify-content-center pt-5 align-items-center">
+                      <h2 className="text-white py-4">
+                        We understand he importance of to approaching Work
+                        integrasand belie in the power simple and we easy cation
+                        growth always act like adipisicing eit,sed do eiumod
+                      </h2>
+                      <h1 className="text-uppercase   text-white">
+                        {user.firstName}
+                      </h1>
+                      <h6 className="colorOrange">
+                        <i>{user.company.department}</i>
+                      </h6>
                     </div>
                   </div>
-                ))}
-              </div>
-              <div className="carousel-item ">
-                {Users?.slice(6, 7).map((user) => (
-                  <div key={user.id} className="row">
+                </div>
+              ))}
+            </SwiperSlide>
+            <SwiperSlide>
+              {Users?.slice(6, 7).map((user) => (
+                <div key={user.id} className="row">
+                  <img
+                    className="img img-fluid  imgSet"
+                    src="https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHVzZXJzfGVufDB8fDB8fHww"
+                    alt={user.firstName}
+                  />{" "}
+                  <div className="col-md-2 col-6">
+                    <img src={bgBar} alt="bgBar" />
+                  </div>
+                  <div className=" offset-md-2 col-md-8  col-12 py-3 ">
                     <img
-                      className="img img-fluid  imgSet"
-                      src={user.image}
-                      alt={user.firstName}
-                    />{" "}
-                    <div className="col-md-2 col-6">
-                      <img src={bgBar} alt="bgBar" />
-                    </div>
-                    <div className=" offset-md-2 col-md-8  col-12 py-3 ">
-                      <img
-                        src={quotes}
-                        className="img img-fluid imgQuote"
-                        alt="Quotes"
-                      />
-                      <div className="justify-content-center pt-5 align-items-center">
-                        <h2 className="text-white py-4">
-                          We understand he importance of to approaching Work
-                          integrasand belie in the power simple and we easy
-                          cation growth always act like adipisicing eit,sed do
-                          eiumod
-                        </h2>
-                        <h1 className="text-uppercase   text-white">
-                          {user.firstName}
-                        </h1>
-                        <h6 className="colorOrange">
-                          <i>{user.company.department}</i>
-                        </h6>
-                      </div>
+                      src={quotes}
+                      className="img img-fluid imgQuote"
+                      alt="Quotes"
+                    />
+                    <div className="justify-content-center pt-5 align-items-center">
+                      <h2 className="text-white py-4">
+                        We understand he importance of to approaching Work
+                        integrasand belie in the power simple and we easy cation
+                        growth always act like adipisicing eit,sed do eiumod
+                      </h2>
+                      <h1 className="text-uppercase   text-white">
+                        {user.firstName}
+                      </h1>
+                      <h6 className="colorOrange">
+                        <i>{user.company.department}</i>
+                      </h6>
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          </div>
+                </div>
+              ))}
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </>

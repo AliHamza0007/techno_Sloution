@@ -12,11 +12,16 @@
   color: white;
 }
 .cardFeatureHover:hover > .badge {
-  left: 40%;
-  transform: scale(1.2);
+  left: 38%;
+  transform: scale(1.1);
   z-index: 1;
 }
-
+.btnTextSize {
+  font-size: 0.9em;
+}
+.ZIndex {
+  z-index: 4;
+}
 .badge {
   background: #fd7405;
   border-radius: 50%;
@@ -33,7 +38,7 @@
 }
 .cornerbg {
   position: absolute;
-  width: 20%;
+  width: 11%;
   right: 0;
   bottom: -4%;
 }
@@ -82,6 +87,9 @@
   .BGimg {
     width: 80%;
   }
+  .cornerbg {
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -102,12 +110,16 @@
   }
   .cornerbg {
     bottom: -2.5%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 375px) {
   .bgImagesBottom {
     top: 15%;
+  }
+  .btnTextSize {
+    font-size: 0.6em;
   }
 }
 @media screen and (max-width: 320px) {

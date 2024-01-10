@@ -51,7 +51,7 @@
   z-index: 1;
 }
 .cardTeamHeight {
-  height: 120px;
+  height: 100px;
 }
 .cardTeamHover:hover {
   background: #fd7405 !important;
