@@ -74,15 +74,15 @@ This project is licensed under the [**Your License Name**] License (see the LICE
 
 <div class="d-flex">
 
-<img src="./ShowCase/11.png"  width="19%" height="400px"  />
-<img src="./ShowCase/10.png"  width="19%" height="400px"  />
-<img src="./ShowCase/2.png"  width="19%" height="400px"  />
-<img src="./ShowCase/3.png"  width="19%" height="400px"  />
-<img src="./ShowCase/4.png"  width="19%" height="400px"  />
-<img src="./ShowCase/5.png"  width="19%" height="400px"  />
-<img src="./ShowCase/6.png"  width="19%" height="400px"  />
-<img src="./ShowCase/7.png"  width="19%" height="400px"  />
-<img src="./ShowCase/8.png"  width="19%" height="400px"  />
-<img src="./ShowCase/9.png"  width="19%" height="400px"  />
+<img src="./ShowCase/11.png"  width="19%" height="300px"  />
+<img src="./ShowCase/10.png"  width="19%" height="300px"  />
+<img src="./ShowCase/2.png"  width="19%" height="300px"  />
+<img src="./ShowCase/3.png"  width="19%" height="300px"  />
+<img src="./ShowCase/4.png"  width="19%" height="300px"  />
+<img src="./ShowCase/5.png"  width="19%" height="300px"  />
+<img src="./ShowCase/6.png"  width="19%" height="300px"  />
+<img src="./ShowCase/7.png"  width="19%" height="300px"  />
+<img src="./ShowCase/8.png"  width="19%" height="300px"  />
+<img src="./ShowCase/9.png"  width="19%" height="300px"  />
 
 </div>
